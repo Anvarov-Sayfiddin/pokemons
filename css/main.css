@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: greenyellow;
+}
+
+img {
+    display: block;
+}
+
+/* open-sans-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-weight: 400;
+    src: url('../fonts/open-sans-v36-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('../fonts/open-sans-v36-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+
+}
+  /* open-sans-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-weight: 700;
+    src:url('../fonts/open-sans-v36-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+    url('../fonts/open-sans-v36-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+.container {
+    max-width: 1300px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.item {
+    width: 400px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    background-color: #f1f1f1;
+    transition: all 0.5s linear;
+}
+
+.item:hover {
+    background-color: green;
+}
+
+/* .item:hover , .item {
+    color: #fff;
+} */
+
+.img-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon-name {
+    font-family: 'Open Sans';
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.wh-wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    margin-bottom: 20px;
+}
+
+.pokemon-egg::before {
+    display: inline-block;
+
+}
+
