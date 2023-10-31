@@ -4124,7 +4124,8 @@ for(let  i = 0; i < pokemons.length;i++) {
 	
 	
 	
-	liElement.className = 'item'
+	liElement.className = 'item';
+	ImgElement.className = 'pokemon-img';
 	ImgWrapper.className = 'img-wrapper'
 	titleElement.className = 'pokemon-name';
 	whWrapper.className = 'wh-wrapper'
